@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mg7-ks-0UP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kHl-mR-BmP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -75,7 +75,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m7y-a2-J2f" id="uSB-GL-HAO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <pickerView tag="1" contentMode="scaleToFill" restorationIdentifier="pickercell" translatesAutoresizingMaskIntoConstraints="NO" id="bPu-cb-zAE" userLabel="Picker View">
@@ -108,6 +108,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpa-58-li3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-444" y="366"/>
+        </scene>
+        <!--Week Collection View Controller-->
+        <scene sceneID="SRT-Wn-XDz">
+            <objects>
+                <collectionViewController id="kHl-mR-BmP" customClass="WeekCollectionViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="R2i-Ne-xh9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WA8-q0-8oo">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="NZv-fC-9Lz">
+                                <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="head" id="XVT-x2-Tvg" customClass="weekReusableView" customModule="test2" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KeQ-PX-YMF">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xYT-Ed-5uj">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <cells>
+                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="weekday" id="uuI-f7-R2t" customClass="DateCollectionViewCell" customModule="test2" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </view>
+                                        </collectionViewCell>
+                                    </cells>
+                                    <connections>
+                                        <outlet property="dataSource" destination="XVT-x2-Tvg" id="CJo-B2-9ni"/>
+                                        <outlet property="delegate" destination="XVT-x2-Tvg" id="3RJ-Sz-mIh"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="KeQ-PX-YMF" firstAttribute="leading" secondItem="XVT-x2-Tvg" secondAttribute="leading" id="2Jz-Hz-4gu"/>
+                                <constraint firstAttribute="trailing" secondItem="KeQ-PX-YMF" secondAttribute="trailing" id="Edg-Xu-e2l"/>
+                                <constraint firstItem="KeQ-PX-YMF" firstAttribute="top" secondItem="XVT-x2-Tvg" secondAttribute="top" id="VJu-Oz-V8U"/>
+                                <constraint firstAttribute="bottom" secondItem="KeQ-PX-YMF" secondAttribute="bottom" id="xMc-ZO-Sn7"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="collectionView" destination="KeQ-PX-YMF" id="mOk-29-5cr"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="kHl-mR-BmP" id="H1F-FI-vmH"/>
+                            <outlet property="delegate" destination="kHl-mR-BmP" id="Tnk-pE-Adx"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDY-ZJ-gaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="1053"/>
         </scene>
         <!--Popup View Controller-->
         <scene sceneID="OC5-BP-P7O">
