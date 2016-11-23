@@ -19,6 +19,7 @@
 		FA8CE7591DD3AEFB00C15812 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CE7581DD3AEFB00C15812 /* PopupViewController.swift */; };
 		FA8CE7641DD4080400C15812 /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CE7631DD4080400C15812 /* HalfModalPresentationController.swift */; };
 		FA8CE76C1DD4180B00C15812 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CE76B1DD4180B00C15812 /* TableViewController.swift */; };
+		FA9E2EAB1DE641DC00F2D7CC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E2EAA1DE641DC00F2D7CC /* PageViewController.swift */; };
 		FAC6A2D21DD50227001BBCE1 /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6A2D11DD50227001BBCE1 /* PickerCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		FA8CE7581DD3AEFB00C15812 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		FA8CE7631DD4080400C15812 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
 		FA8CE76B1DD4180B00C15812 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		FA9E2EAA1DE641DC00F2D7CC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		FAC6A2D11DD50227001BBCE1 /* PickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				FA7B53011DD19C0B00A8B66C /* ViewController.swift */,
 				FA8CE7631DD4080400C15812 /* HalfModalPresentationController.swift */,
 				FA7B53031DD19C0B00A8B66C /* Main.storyboard */,
+				FA9E2EAA1DE641DC00F2D7CC /* PageViewController.swift */,
 				FA0EF9441DE54C720057F861 /* DatePickerCell.swift */,
 				FA2CBBD01DD5217A005BB378 /* weekReusableView.swift */,
 				FA2CBBCE1DD51C7A005BB378 /* WeekCollectionViewController.swift */,
@@ -162,6 +165,7 @@
 			files = (
 				FA2CBBCF1DD51C7A005BB378 /* WeekCollectionViewController.swift in Sources */,
 				FA7B53021DD19C0B00A8B66C /* ViewController.swift in Sources */,
+				FA9E2EAB1DE641DC00F2D7CC /* PageViewController.swift in Sources */,
 				FA8CE7641DD4080400C15812 /* HalfModalPresentationController.swift in Sources */,
 				FA2CBBD11DD5217A005BB378 /* weekReusableView.swift in Sources */,
 				FAC6A2D21DD50227001BBCE1 /* PickerCell.swift in Sources */,
