@@ -21,7 +21,7 @@ class weekReusableView: UICollectionReusableView {
     public var darkColor = UIColor(red: 0, green: 22.0/255.0, blue: 39.0/255.0, alpha: 1)
     
     override func awakeFromNib() {
-        let layout:UICollectionViewFlowLayout = collectionView?.collectionViewLayout  as! UICollectionViewFlowLayout
+        let layout = collectionView?.collectionViewLayout  as! UICollectionViewFlowLayout
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
         //        layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
@@ -71,7 +71,33 @@ class weekReusableView: UICollectionReusableView {
         collectionView.reloadData()
         
     }
+    
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        alignScrollView(scrollView)
+    }
+    
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            alignScrollView(scrollView)
+        }
+    }
+    
+    func alignScrollView(_ scrollView: UIScrollView) {
+        if let collectionView = scrollView as? UICollectionView {
+            let centerPoint = CGPoint(x: 10 + collectionView.contentOffset.x, y: 50);
+            if let indexPath = collectionView.indexPathForItem(at: centerPoint) {
+                // automatically select this item and center it to the screen
+                // set animated = false to avoid unwanted effects
+                collectionView.selectItem(at: indexPath, animated: false, scrollPosition: .top)
+                if let cell = collectionView.cellForItem(at: indexPath) {
+                    let offset = CGPoint(x: cell.center.x - cell.contentView.frame.width / 2, y: 0)
+                    collectionView.setContentOffset(offset, animated: false)
+                }
 
+                selectedIndex = indexPath
+            }
+        }
+    }
     
 }
 

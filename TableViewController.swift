@@ -8,11 +8,18 @@
 
 import UIKit
 
-class TableViewController: UITableViewController ,PickerViewDelegate{
+class TableViewController: UITableViewController ,PickerViewDelegate {
     var datePickerIndexPath: IndexPath?
+    var lastVerticalOffset: CGFloat = 0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    /*
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+      */  
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -49,9 +56,12 @@ class TableViewController: UITableViewController ,PickerViewDelegate{
       
        
         if datePickerIndexPath != nil && datePickerIndexPath!.row == indexPath.row {
-            let cell = tableView.dequeueReusableCell (withIdentifier: "pickercell") as! PickerCell
+         //   let cell = tableView.dequeueReusableCell (withIdentifier: "pickercell") as! PickerCell
+            // cell.pickerViewdelegate = self
             
-            cell.pickerViewdelegate = self
+            
+              let cell = tableView.dequeueReusableCell (withIdentifier: "datepickercell") as! DatePickerCell
+            
 
         return cell
         } else {
@@ -103,5 +113,16 @@ class TableViewController: UITableViewController ,PickerViewDelegate{
     func userSelected(choice: Int) {
         
     }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let verticalOffset = scrollView.contentOffset.y
+        navigationController?.navigationBar.alpha =  scrollView.contentOffset.y / 300
+        print ("verticalOffset = \(verticalOffset)")
+        let scrollAmount = verticalOffset - lastVerticalOffset  //get scrolling amount since last update
+        print(scrollAmount)
+        lastVerticalOffset = verticalOffset
+    
+    }
+
 
 }

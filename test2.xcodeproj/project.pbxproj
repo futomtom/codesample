@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0EF9451DE54C720057F861 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EF9441DE54C720057F861 /* DatePickerCell.swift */; };
 		FA2CBBCF1DD51C7A005BB378 /* WeekCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CBBCE1DD51C7A005BB378 /* WeekCollectionViewController.swift */; };
 		FA2CBBD11DD5217A005BB378 /* weekReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CBBD01DD5217A005BB378 /* weekReusableView.swift */; };
 		FA2CBBD51DD52787005BB378 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CBBD41DD52787005BB378 /* DateCollectionViewCell.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0EF9441DE54C720057F861 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
 		FA2CBBCE1DD51C7A005BB378 /* WeekCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewController.swift; sourceTree = "<group>"; };
 		FA2CBBD01DD5217A005BB378 /* weekReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weekReusableView.swift; sourceTree = "<group>"; };
 		FA2CBBD41DD52787005BB378 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				FA7B53011DD19C0B00A8B66C /* ViewController.swift */,
 				FA8CE7631DD4080400C15812 /* HalfModalPresentationController.swift */,
 				FA7B53031DD19C0B00A8B66C /* Main.storyboard */,
+				FA0EF9441DE54C720057F861 /* DatePickerCell.swift */,
 				FA2CBBD01DD5217A005BB378 /* weekReusableView.swift */,
 				FA2CBBCE1DD51C7A005BB378 /* WeekCollectionViewController.swift */,
 				FAC6A2D11DD50227001BBCE1 /* PickerCell.swift */,
@@ -166,6 +169,7 @@
 				FA8CE76C1DD4180B00C15812 /* TableViewController.swift in Sources */,
 				FA2CBBD51DD52787005BB378 /* DateCollectionViewCell.swift in Sources */,
 				FA8CE7591DD3AEFB00C15812 /* PopupViewController.swift in Sources */,
+				FA0EF9451DE54C720057F861 /* DatePickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
