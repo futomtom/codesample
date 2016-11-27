@@ -15,17 +15,14 @@ class TableViewController: UITableViewController ,PickerViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    /*
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = true
-      */  
+        let segment: UISegmentedControl = UISegmentedControl(items: ["First", "Second"])
+        segment.sizeToFit()
+        segment.tintColor = UIColor(red:0.99, green:0.00, blue:0.25, alpha:1.00)
+        segment.selectedSegmentIndex = 0;
+      //  segment.setTitleTextAttributes([NSFontAttributeName: UIFont(name:"ProximaNova-Light", size: 15)!],for: UIControlState.normal)
+        navigationItem.titleView = segment
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
 
     override func didReceiveMemoryWarning() {
