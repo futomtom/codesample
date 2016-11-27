@@ -113,7 +113,7 @@ class TableViewController: UITableViewController ,PickerViewDelegate {
     func userSelected(choice: Int) {
         
     }
-    
+  /*
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let verticalOffset = scrollView.contentOffset.y
         navigationController?.navigationBar.alpha =  scrollView.contentOffset.y / 300
@@ -123,6 +123,6 @@ class TableViewController: UITableViewController ,PickerViewDelegate {
         lastVerticalOffset = verticalOffset
     
     }
-
+*/
 
 }
