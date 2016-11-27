@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82D336FD1DEAB6B000D0CE52 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D336FC1DEAB6B000D0CE52 /* SegmentViewController.swift */; };
 		FA0EF9451DE54C720057F861 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EF9441DE54C720057F861 /* DatePickerCell.swift */; };
 		FA2CBBCF1DD51C7A005BB378 /* WeekCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CBBCE1DD51C7A005BB378 /* WeekCollectionViewController.swift */; };
 		FA2CBBD11DD5217A005BB378 /* weekReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CBBD01DD5217A005BB378 /* weekReusableView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82D336FC1DEAB6B000D0CE52 /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		FA0EF9441DE54C720057F861 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
 		FA2CBBCE1DD51C7A005BB378 /* WeekCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewController.swift; sourceTree = "<group>"; };
 		FA2CBBD01DD5217A005BB378 /* weekReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weekReusableView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				FA7B52FF1DD19C0B00A8B66C /* AppDelegate.swift */,
 				FA7B53011DD19C0B00A8B66C /* ViewController.swift */,
+				82D336FC1DEAB6B000D0CE52 /* SegmentViewController.swift */,
 				FA8CE7631DD4080400C15812 /* HalfModalPresentationController.swift */,
 				FA7B53031DD19C0B00A8B66C /* Main.storyboard */,
 				FA9E2EAA1DE641DC00F2D7CC /* PageViewController.swift */,
@@ -167,6 +170,7 @@
 				FA7B53021DD19C0B00A8B66C /* ViewController.swift in Sources */,
 				FA9E2EAB1DE641DC00F2D7CC /* PageViewController.swift in Sources */,
 				FA8CE7641DD4080400C15812 /* HalfModalPresentationController.swift in Sources */,
+				82D336FD1DEAB6B000D0CE52 /* SegmentViewController.swift in Sources */,
 				FA2CBBD11DD5217A005BB378 /* weekReusableView.swift in Sources */,
 				FAC6A2D21DD50227001BBCE1 /* PickerCell.swift in Sources */,
 				FA7B53001DD19C0B00A8B66C /* AppDelegate.swift in Sources */,

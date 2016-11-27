@@ -15,15 +15,12 @@ class TableViewController: UITableViewController ,PickerViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let segment: UISegmentedControl = UISegmentedControl(items: ["First", "Second"])
-        segment.sizeToFit()
-        segment.tintColor = UIColor(red:0.99, green:0.00, blue:0.25, alpha:1.00)
-        segment.selectedSegmentIndex = 0;
-      //  segment.setTitleTextAttributes([NSFontAttributeName: UIFont(name:"ProximaNova-Light", size: 15)!],for: UIControlState.normal)
+       
         navigationItem.titleView = segment
-
-        
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
